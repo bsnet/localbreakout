@@ -47,6 +47,7 @@ ipLAN  :                              |10.20.13.91      10.20.13.92
        :                              |
 ipLB   :                        172.21.20.100
 ```
+
 Additionally we consider the following names for the interfaces:
 
 - UE:   interface ppp0 (address 192.168.200.2);
@@ -94,7 +95,7 @@ To set up the local break out daemon run in the following order:
         sudo tc qdisc add dev eth0 root netem delay 100ms
 ```
 
-    To test the delay, on the eNB try pinging the SPGW (you should see 100ms
+  - To test the delay, on the eNB try pinging the SPGW (you should see 100ms
     delay).
 
   - Start the localbreakout daemon on the **eNB**:
@@ -130,7 +131,9 @@ To set up the local break out daemon run in the following order:
 
   - Now tell the **UE** where the "local" address on the eNB tun10 is:
 
-        `sudo route add 172.21.20.100 gw 10.64.64.64`
+```
+        sudo route add 172.21.20.100 gw 10.64.64.64`
+```
 
   - Try pinging the localbreakout from the **UE**, latency must be much smaller:
 
