@@ -1,19 +1,17 @@
 # localbreakout
-An opensource localbreakout solution for LTE networks
+## An opensource localbreakout solution for LTE networks
 
 Use this small demo software to setup a localbreakout daemon on the node that
 terminates the LTE air interface. It has been tested with OAI and srsLTE.
 
 Download a short demo video here:
 
-    http://netweb.ing.unibs.it/gringoli/localbreakoutvideo.mp4
+    (http://netweb.ing.unibs.it/gringoli/localbreakoutvideo.mp4)
 
 In the video I followed the same naming conventions (IP addresses, interfaces)
 as in this guide.
 
------- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o -----
-
-1) Quick compilation guide:
+### Quick compilation guide:
 
 To compile on ubuntu install first some required libraries and binaries:
 
@@ -24,9 +22,7 @@ then run make.
 - openvpn is needed to create the tunnel interface;
 - tshark is used to sniff the GTP tunnel signalling ASN.1 traffic.
 
------- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o -----
-
-2) Example topology
+### Example topology
 
 In the following description we assume the following topology:
 
@@ -59,9 +55,7 @@ On UE the route for SPGW is the default of the ppp0 and points to 10.64.64.64.
 UE traffic travels to/from SPGW embedded into GTP/UDP datagrams exchanged on the
 ethernet segment.
 
------- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o ----- o -----
-
-3) Running the local break out
+### Running the local break out
 
 To set up the local break out daemon run in the following order:
 
