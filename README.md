@@ -4,9 +4,8 @@
 Use this small demo software to setup a localbreakout daemon on the node that
 terminates the LTE air interface. It has been tested with OAI and srsLTE.
 
-Download a short demo video here:
-
-    http://netweb.ing.unibs.it/gringoli/localbreakoutvideo.mp4
+Download a short demo video
+[here](http://netweb.ing.unibs.it/gringoli/localbreakoutvideo.mp4).
 
 In the video I followed the same naming conventions (IP addresses, interfaces)
 as in this guide.
