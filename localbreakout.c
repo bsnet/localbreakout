@@ -1,8 +1,19 @@
-/*
- * https://git.netfilter.org/libnetfilter_queue/tree/examples/nf-queue.c
- * https://home.regit.org/netfilter-en/using-nfqueue-and-libnetfilter_queue/
- * sudo iptables -A OUTPUT -p udp --dst 192.168.42.111 --dport 2152 -j NFQUEUE --queue-num 0
- */
+/***************************************************************************
+ * Copyright (c) 2019 University of Brescia                                *
+ *                                                                         *
+ * This is free software: you can redistribute it and/or modify            *
+ * it under the terms of the GNU General Public License as published by    *
+ * the Free Software Foundation, either version 3 of the License, or       *
+ * (at your option) any later version.                                     *
+ *                                                                         *
+ * localbreakout is distributed in the hope that it will be useful,        *
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+ * GNU General Public License for more details.                            *
+ *                                                                         *
+ * You should have received a copy of the GNU General Public License       *
+ * along with localbreakout. If not, see <http://www.gnu.org/licenses/>.   *
+ **************************************************************************/
 
 #include <errno.h>
 #include <stdio.h>
